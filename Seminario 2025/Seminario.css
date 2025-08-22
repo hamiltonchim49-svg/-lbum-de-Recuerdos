@@ -1,0 +1,101 @@
+/* --- General --- */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #ffffff;
+  color: #000000;
+  scroll-behavior: smooth;
+}
+
+/* --- Header --- */
+header {
+  background: linear-gradient(90deg, #1E90FF 0%, #000000 50%, #1E90FF 100%);
+  color: white;
+  text-align: center;
+  padding: 40px 20px;
+  border-bottom: 5px solid #1E90FF;
+}
+header h1 {
+  font-size: 2.8rem;
+  margin: 0;
+}
+header p {
+  margin-top: 10px;
+  font-size: 1.2rem;
+}
+
+nav a {
+  color: #ffffff;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1rem;
+  transition: transform 0.3s, color 0.3s;
+}
+nav a:hover {
+  color: #1E90FF;
+  transform: scale(1.1);
+}
+
+/* --- Secciones --- */
+.seccion {
+  padding: 50px 20px;
+  max-width: 1100px;
+  margin: auto;
+  background: #ffffff;
+  border-radius: 12px;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+h2 {
+  text-align: center;
+  color: #1E90FF;
+  margin-bottom: 20px;
+}
+
+/* --- Álbum estilo polaroid --- */
+.album {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 20px;
+}
+
+.foto img {
+  width: 450%;
+  height: 350px;       /* altura fija para todas */
+  object-fit: cover;   /* recorta la foto pero mantiene proporción */
+  border-radius: 8px;
+}   
+.foto {
+  background: #fff;
+  border: 2px solid #1E90FF;
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.foto img {
+  width: 100%;
+  border-radius: 8px;
+}
+.foto p {
+  margin: 10px 0 0;
+  font-size: 0.95rem;
+  color: #000;
+}
+.foto:hover {
+  transform: scale(1.05) rotate(-1deg);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+
+/* --- Footer --- */
+footer {
+  background: #000000;
+  color: #ffffff;
+  text-align: center;
+  padding: 20px;
+}
+footer p {
+  margin: 0;
+}
